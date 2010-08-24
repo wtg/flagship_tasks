@@ -3,8 +3,6 @@ class ApplicationController < ActionController::Base
   # that is rendered and checking for it when the form is received.
   protect_from_forgery
 
-  # Don't log sensitive data (passwords).
-  filter_parameter_logging :password, :password_confirmation
   # Make the current_user_session and current_user methods
   # available to the views.
   helper_method :current_user_session, :current_user
